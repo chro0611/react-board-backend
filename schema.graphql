@@ -1,0 +1,19 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Board {
+  board_id: Int!
+  user_id: String
+  title: String
+  content: String
+}
+
+type Query {
+  list(limit: Float!, offset: Float!): [Board!]!
+  read(id: Float!): Board!
+}
+
+type Mutation {
+  write(content: String!, title: String!, user_id: String!): String!
+}
